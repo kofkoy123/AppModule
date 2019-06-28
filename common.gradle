@@ -17,14 +17,24 @@ ext {//扩展Project的变量
 
     java = ['javaVersion': JavaVersion.VERSION_1_8]
 
-    dependence = ['libAppcompat'       : 'androidx.appcompat:appcompat:1.0.2',
-                  'libConstraintlayout': 'androidx.constraintlayout:constraintlayout:1.1.3',
-                  'libJunit'           : 'junit:junit:4.12',
-                  'libRunner'          : 'androidx.test:runner:1.2.0',
-                  'libEspresso'        : 'androidx.test.espresso:espresso-core:3.2.0',
-                  'libArouterApi'      : 'com.alibaba:arouter-api:1.5.0',
-                  'libArouterCompiler' : 'com.alibaba:arouter-compiler:1.2.2',
-                  'libRecyclerview'    : 'androidx.recyclerview:recyclerview:1.0.0',
+    dependence = ['libAppcompat'          : 'androidx.appcompat:appcompat:1.0.2',
+                  'libConstraintlayout'   : 'androidx.constraintlayout:constraintlayout:1.1.3',
+                  'libJunit'              : 'junit:junit:4.12',
+                  'libRunner'             : 'androidx.test:runner:1.2.0',
+                  'libEspresso'           : 'androidx.test.espresso:espresso-core:3.2.0',
+                  'libArouterApi'         : 'com.alibaba:arouter-api:1.5.0',
+                  'libArouterCompiler'    : 'com.alibaba:arouter-compiler:1.2.2',
+                  'libRecyclerview'       : 'androidx.recyclerview:recyclerview:1.0.0',
+                  'libLogger'             : 'com.orhanobut:logger:2.1.1',
+                  'libButterknife'        : 'com.jakewharton:butterknife:10.1.0',
+                  'libButterknifeCompiler':    'com.jakewharton:butterknife-compiler:10.1.0',
+                  'libBaseAdpater'        : 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.31',
+                  'libSmartRefreshLayout' : 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4',
+                  'libSmartRefreshHeader' : 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.4',
+                  'libRetrofit' :'com.squareup.retrofit2:retrofit:2.3.0',
+                  'libConverterGson' :'com.squareup.retrofit2:converter-gson:2.3.0',
+                  'libAdapterRxjava' :'com.squareup.retrofit2:adapter-rxjava:2.0.2',
+
     ]
 
 }

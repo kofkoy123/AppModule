@@ -12,12 +12,12 @@ import com.lzr.module_base.BuildConfig;
  */
 public class BaseApplication extends Application {
 
-    private static BaseApplication INSTANCE = null;
+    private static BaseApplication instance ;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        INSTANCE = this;
+        instance = this;
 
         if (BuildConfig.DEBUG) {           // 这两行必须写在init之前，否则这些配置在init过程中将无效
             ARouter.openLog();     // 打印日志
@@ -29,7 +29,7 @@ public class BaseApplication extends Application {
 
 
     public static BaseApplication getInstance() {
-        return INSTANCE;
+        return instance;
     }
 
 }

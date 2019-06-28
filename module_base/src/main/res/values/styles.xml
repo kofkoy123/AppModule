@@ -14,4 +14,23 @@
     </style>
 
 
+    <!-- 弹窗动画-->
+    <style name="anim_menu_bottombar">
+        <item name="android:windowEnterAnimation">@anim/menu_bottombar_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_bottombar_out</item>
+    </style>
+
+    <!-- 统一appDialog动画-->
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_show</item>
+        <item name="android:windowExitAnimation">@anim/dialog_dismiss</item>
+    </style>
+
+    <!--下拉框动画-->
+    <style name="popmenu_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/spriner_pop_show</item>
+        <item name="android:windowExitAnimation">@anim/spriner_pop_hide</item>
+    </style>
+
+
 </resources>

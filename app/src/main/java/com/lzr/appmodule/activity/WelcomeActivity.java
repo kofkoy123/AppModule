@@ -1,13 +1,13 @@
-package com.lzr.appmodule;
+package com.lzr.appmodule.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import androidx.appcompat.app.AppCompatActivity;
 
-import com.alibaba.android.arouter.launcher.ARouter;
+import com.lzr.appmodule.R;
+
 
 public class WelcomeActivity extends AppCompatActivity {
 
@@ -20,9 +20,12 @@ public class WelcomeActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                ARouter.getInstance().build("/user/LoginActivity").navigation();
+                Intent intent= new Intent(WelcomeActivity.this, MainActivity.class);
+
+                startActivity(intent);
+
             }
-        },2000);
+        },1000);
 
     }
 }
